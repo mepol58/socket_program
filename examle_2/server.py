@@ -11,7 +11,7 @@ try:
     serverSocket.bind((host, port)) 
     print("socket {} nolu porta bağlandı".format(port))
 
-    s.listen(5)      
+    serverSocket.listen(5)      
     print("socket is ready")
 except socket.error as msg:
     print("error:",msg)
@@ -23,8 +23,10 @@ while True:
    byte_sentence=connectionSocket.recv(1024)
    utf_sentence=byte_sentence.decode("utf-8")
    modified_utfsentence=utf_sentence.upper()
+   modified_bytesentence=bytes(modified_utfsentence,"utf-8")
    
-   connectionSocket.send(modified_utfsentence)
+   connectionSocket.send(modified_bytesentence)
+   print("mesajınızı {} yolladım teşekkürler".format(modified_bytesentence) )
    connectionSocket.close()
 
    # Bağlantıyı sonlandıralım 

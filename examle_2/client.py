@@ -1,7 +1,7 @@
 import socket                
 
 # Socket oluşturulması
-clientSocket = socket.socket(socket.Af_INET,socket.SOCK_STREAM)
+clientSocket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
 
 # Bağlanılacak adres ve port
