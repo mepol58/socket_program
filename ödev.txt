@@ -1,1 +1,9 @@
-ödev
+BÝlgisayar bilimlerine giriþ dersi network ünitesi için python uygulamasýdýr
+
+socket programlama ile ilgili olarak 2 python dosyasý vardýr.
+
+Server çalýþtýrýlýrsa port açýlýr ve dinleme baþlar
+
+Client açýldýðýnda da her istek server programý tarafýndan dinlenir alýnýr ve ekrana yazýlýr.
+
+https://kerteriz.net/python-socket-programlama-nedir/ adresindne alýnmýþtýr. 
